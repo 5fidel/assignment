@@ -15,7 +15,7 @@ class PeopleTableSeeder extends Seeder
     public function run(): void
     {
         //
-        Building::factory(3)
+        Building::factory(6)
             ->has(Person::factory()->count(5))
             ->create();
     }
