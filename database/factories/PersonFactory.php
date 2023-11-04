@@ -20,6 +20,8 @@ class PersonFactory extends Factory
         return [
             //
             'name' => $this->faker->firstName(),
+            'birthdate' => $this->faker->dateTimeBetween('1970-01-01', '2012-12-31'),
+            'nationality' => $this->faker->country(),
         ];
     }
 }
