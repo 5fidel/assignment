@@ -11,7 +11,7 @@ class Person extends Model
 
     protected $fillable = ['name'];
 
-    public function building()
+    public function buildings()
     {
         return $this->belongsTo(Building::class);
     }
