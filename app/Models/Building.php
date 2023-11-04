@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Person extends Model
+class Building extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['address'];
 
-    public function building()
+    public function people()
     {
-        return $this->belongsTo(Building::class);
+        return $this->hasMany(Person::class);
     }
 }

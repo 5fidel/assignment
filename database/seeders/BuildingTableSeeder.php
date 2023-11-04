@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Building;
 use App\Models\Person;
 
-class PeopleTableSeeder extends Seeder
+class BuildingTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,7 +16,7 @@ class PeopleTableSeeder extends Seeder
     {
         //
         Building::factory(3)
-            ->has(Person::factory()->count(5)) // Adjust the count as needed
+            ->has(Person::factory()->count(5))
             ->create();
     }
 }
